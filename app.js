@@ -1,4 +1,4 @@
-var http = require('http');
+/*var http = require('http');
 var express = require('express');
 var app = express();
 
@@ -9,4 +9,17 @@ app.use(function(req, res){
 
 http.createServer(app).listen(1337, function(){
 	console.log('Server running ap http://127.0.0.1:1337/');
+});*/
+
+
+var express = require('express');
+
+var app = express();
+
+app.get('/', function (req, res){
+	res.send('Hello World!');
+});
+
+app.listen(3000, function(){
+	console.log('Server On!');
 });
